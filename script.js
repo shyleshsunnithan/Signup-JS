@@ -48,10 +48,8 @@ form.addEventListener('submit', e => {
 	else if (!uniqueUser(usersFromDB, username)) throwError('Username taken.');
 	
 	else if (!validEmail(email)) throwError('You must enter a valid email.');
-
 	else if (!validPassowrd(password))
 		throwError('Your password must have at least 6 characters.');
-
 	else if (!validRepeat(password, repeatPassword))
 		throwError('Your passwords do not match.');
 	
